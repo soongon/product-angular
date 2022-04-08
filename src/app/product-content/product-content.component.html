@@ -1,0 +1,8 @@
+<button (click)="refreshScreen()">최신 상품보기</button>
+<ul>
+  <li *ngFor="let product of products">
+    <p><a href="" (click)="goDetail()">상품 아이디 : {{ product.id }}</a></p>
+    <p>상품명 : {{ product.title }}</p>
+    <p>설명 : {{ product.body }}</p>
+  </li>
+</ul>
